@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/margin-padding.css">
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/jquery-3.5.1.js" defer></script>
+    <script src="assets/js/jquery.dataTables.min.js" defer></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/worldometers-logo.gif" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="index.html">Coronavirus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Population</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Graphs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Countries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="banner-section">
+        <div class="overlay"></div>
+        <div class="banner-content d-flex h-100">
+            <div class="container d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col-md-12 text-white text-center">
+                        <h1>COVID-19 CORONAVIRUS PANDEMIC</h1>
+                        <p class="mt-30 mb-30"><i class="fa fa-calendar"></i> Last updated: February 14, 2021, 08:48 GMT</p>
+                        <div class="link-items">
+                            <a href="#" class="btn btn-outline-info">Graphs</a>
+                            <a href="#" class="btn btn-outline-light">Countries</a>
+                            <a href="#" class="btn btn-outline-warning">News</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats-section" class="mt-50 mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-sm-6 mb-sm-30 text-center stats-item">
+                    <div class="box text-white bg-secondary">
+                        <h2>Coronavirus cases</h2>
+                        <span class="count">110,952,337</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-sm-6 mb-sm-30 text-center stats-item">
+                    <div class="box text-white bg-danger">
+                        <h2>Deaths</h2>
+                        <span class="count">2,454,722</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-sm-6 mb-sm-30 text-center stats-item">
+                    <div class="box text-white bg-success">
+                        <h2>Recovered</h2>
+                        <span class="count">85,886,016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts-section" class="mt-50 mb-50">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-sm-6 mb-sm-30">
+                    <div class="card text-center">
+                        <div class="card-header">ACTIVE CASES</div>
+                        <div class="card-body">
+                            <h1 class="card-title">88,349,201</h1>
+                            <p>Cases which had an outcome</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="text-info">22,513,206</h2>
+                                    <span>(99.6%)</span>
+                                    <p>in Mild Condition</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2 class="text-danger">95,410</h2> <span>(0.4%)</span>
+                                    <p>Serious or Critical</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-default">Show Graph <i
+                                   class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mb-sm-30">
+                    <div class="card text-center">
+                        <div class="card-header">CLOSED CASES</div>
+                        <div class="card-body">
+                            <h1 class="card-title">88,349,201</h1>
+                            <p>Cases which had an outcome</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h2 class="text-success">85,892,512</h2>
+                                    <span>(97%)</span>
+                                    <p>Recovered / Discharged</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h2 class="text-black-50">2,454,868</h2>
+                                    <span>(3%)</span>
+                                    <p>Deaths</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-default">Show Graph <i
+                                   class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mb-sm-30">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-daily-tab" data-bs-toggle="tab" data-bs-target="#nav-daily" type="button" role="tab" aria-controls="nav-daily" aria-selected="true">Daily</button>
+                                <button class="nav-link" id="nav-linear-tab" data-bs-toggle="tab" data-bs-target="#nav-linear" type="button" role="tab" aria-controls="nav-linear" aria-selected="false">Linear</button>
+                                <button class="nav-link" id="nav-logarithmic-tab" data-bs-toggle="tab" data-bs-target="#nav-logarithmic" type="button" role="tab" aria-controls="nav-logarithmic" aria-selected="false">Logarithmic</button>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-daily" role="tabpanel" aria-labelledby="nav-daily-tab">
+                                    <p>Daily New Cases</p>
+                                    <p>Cases per DayData as of 0:00 GMT+0</p>
+                                    <img src="assets/images/chart/daily-cases.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-linear" role="tabpanel" aria-labelledby="nav-linear-tab">
+                                    <p>Total Cases</p>
+                                    <p>(Linear Scale)</p>
+                                    <img src="assets/images/chart/linear-cases.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-logarithmic" role="tabpanel" aria-labelledby="nav-logarithmic-tab">
+                                    <p>Total Cases</p>
+                                    <p>(Logarithmic Scale)</p>
+                                    <img src="assets/images/chart/logarithmic-cases.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 mb-sm-30">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-daily-deaths-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-daily-deaths"
+                                            type="button" role="tab" aria-controls="nav-daily-deaths"
+                                            aria-selected="true">Daily</button>
+                                    <button class="nav-link" id="nav-linear-deaths-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-linear-deaths"
+                                            type="button" role="tab" aria-controls="nav-linear-deaths"
+                                            aria-selected="false">Linear</button>
+                                    <button class="nav-link" id="nav-logarithmic-deaths-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#nav-logarithmic-deaths" type="button"
+                                            role="tab" aria-controls="nav-logarithmic-deaths"
+                                            aria-selected="false">Logarithmic</button>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-daily-deaths"
+                                     role="tabpanel" aria-labelledby="nav-daily-deaths-tab">
+                                    <p>Daily New Cases</p>
+                                    <p>Cases per DayData as of 0:00 GMT+0</p>
+                                    <img src="assets/images/chart/daily-deaths.jpg" alt="" class="img-fluid">
+                                </div>
+                
+                                <div class="tab-pane fade" id="nav-linear-deaths" role="tabpanel"
+                                     aria-labelledby="nav-linear-deaths-tab">
+                                    <p>Total Deaths</p>
+                                    <p>(Linear Scale)</p>
+                                    <img src="assets/images/chart/linear-deaths.jpg" alt="" class="img-fluid">
+                                </div>
+                
+                                <div class="tab-pane fade" id="nav-logarithmic-deaths" role="tabpanel"
+                                     aria-labelledby="nav-logarithmic-deaths-tab">
+                                    <p>Total Deaths</p>
+                                    <p>(Logarithmic Scale)</p>
+                                    <img src="assets/images/chart/logarithmic-deaths.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-20">
+                    <p class="alert alert-default text-center">The charts above are updated after the close of the day in GMT+0. <a href="#">See more graphs</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reported-cases-bycountry" class="mt-50 mb-50 p-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-30 text-center underlined">Reported Cases and Deaths by Country or Territory</h2>
+                    <p class="text-justify">
+                        The coronavirus COVID-19 is affecting 219 countries and territories. The day is reset after midnight GMT+0. The list of countries and their regional
+                        classification is based on the <a href="#">United Nations Geoscheme</a>. Sources are <a href="#">provided under "Latest News."</a> <a href="#">Learn more about Worldometer's COVID-19 data</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 table-responsive">
+                    <div class="table-responsive">
+                        <table id="main_table_countries_today" class="table table-bordered table-hover main_table_countries dataTable no-footer">
+                            <thead>
+                                <tr role="row">
+                                    <th width="1%" class="sorting_disabled" 
+                                        rowspan="1" colspan="1" aria-label="#" style="width: 21px;"># &nbsp;</th>
+                                    <th width="100" class="sorting_desc" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="Country,Other: activate to sort column ascending"
+                                        style="width: 101px;" aria-sort="descending">Country,<br>Other
+                                    </th>
+                                    <th width="20" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="TotalCases: activate to sort column descending"
+                                        style="width: 64px;">Total<br>Cases</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="NewCases: activate to sort column descending"
+                                        style="width: 44px;">New<br>Cases</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="TotalDeaths: activate to sort column descending"
+                                        style="width: 47px;">Total<br>Deaths</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="NewDeaths: activate to sort column descending"
+                                        style="width: 47px;">New<br>Deaths</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="TotalRecovered: activate to sort column descending"
+                                        style="width: 72px;">Total<br>Recovered</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="ActiveCases: activate to sort column descending"
+                                        style="width: 56px;">Active<br>Cases</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="Serious,Critical: activate to sort column descending"
+                                        style="width: 56px;">Serious,<br>Critical</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="Tot&amp;nbsp;Cases/1M pop: activate to sort column descending"
+                                        style="width: 71px;">Tot&nbsp;Cases/<br>1M pop</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="Deaths/1M pop: activate to sort column descending"
+                                        style="width: 51px;">Deaths/<br>1M pop</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="TotalTests: activate to sort column descending"
+                                        style="width: 65px;">Total<br>Tests</th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" rowspan="1"
+                                        colspan="1"
+                                        aria-label="Tests/ 1M pop : activate to sort column descending"
+                                        style="width: 49px;">Tests/<br>
+                                        <nobr>1M pop</nobr>
+                                    </th>
+                                    <th width="30" class="sorting" tabindex="0"
+                                        aria-controls="main_table_countries_today" 
+                                        aria-label="Population: activate to sort column descending"
+                                        style="width: 78px;">Population</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr role="row" class="odd">
+                                    <td>1</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/zimbabwe/">Zimbabwe</a></td>
+                                    <td class="">36,341</td>
+                                    <td></td>
+                                    <td>1,489 </td>
+                                    <td></td>
+                                    <td>33,953</td>
+                                    <td>899</td>
+                                    <td>22</td>
+                                    <td>2,421</td>
+                                    <td>99</td>
+                                    <td>355,865</td>
+                                    <td>23,706</td>
+                                    <td><a href="/world-population/zimbabwe-population/">15,011,546</a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>2</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/zambia/">Zambia</a></td>
+                                    <td class="">83,913</td>
+                                    <td>+580</td>
+                                    <td>1,148 </td>
+                                    <td>+8</td>
+                                    <td>80,027</td>
+                                    <td>2,738</td>
+                                    <td>192</td>
+                                    <td>4,479</td>
+                                    <td>61</td>
+                                    <td>1,148,568</td>
+                                    <td>61,306</td>
+                                    <td><a href="/world-population/zambia-population/">18,735,154</a>
+                                    </td>
+                                
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>3</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/yemen/">Yemen</a></td>
+                                    <td class="">2,667</td>
+                                    <td>+40</td>
+                                    <td>667</td>
+                                    <td>+6</td>
+                                    <td>1,464</td>
+                                    <td>536</td>
+                                    <td>23</td>
+                                    <td>88</td>
+                                    <td>22</td>
+                                    <td>17,404</td>
+                                    <td>575</td>
+                                    <td><a href="/world-population/yemen-population/">30,275,469</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>4</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/western-sahara/">Western Sahara</a></td>
+                                    <td class="">10</td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td>8</td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td>16</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/western-sahara-population/">607,375</a>
+                                    </td>
+                                
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>5</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/wallis-and-futuna-islands/">Wallis and Futuna</a></td>
+                                    <td class="">129</td>
+                                    <td>+63</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>7</td>
+                                    <td>122</td>
+                                    <td>1</td>
+                                    <td>11,620</td>
+                                    <td></td>
+                                    <td>1,331</td>
+                                    <td>119,888</td>
+                                    <td><a href="/world-population/wallis-and-futuna-islands-population/">11,102</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Australia/Oceania">Australia/Oceania</td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>6</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/viet-nam/">Vietnam</a></td>
+                                    <td class="">2,533</td>
+                                    <td>+4</td>
+                                    <td>35 </td>
+                                    <td></td>
+                                    <td>2,048</td>
+                                    <td>450</td>
+                                    <td></td>
+                                    <td>26</td>
+                                    <td>0.4</td>
+                                    <td>2,598,753</td>
+                                    <td>26,534</td>
+                                    <td><a href="/world-population/viet-nam-population/">97,941,814</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>7</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/venezuela/">Venezuela</a></td>
+                                    <td class="">143,796
+                                    </td>
+                                    <td></td>
+                                    <td>1,407 </td>
+                                    <td></td>
+                                    <td>135,869</td>
+                                    <td>6,520</td>
+                                    <td>139</td>
+                                    <td>5,067</td>
+                                    <td>50</td>
+                                    <td>2,962,352</td>
+                                    <td>104,381</td>
+                                    <td><a href="/world-population/venezuela-population/">28,380,156</a>
+                                    </td>
+                                    <td style="display:none" data-continent="South America">South America</td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>8</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/holy-see/">Vatican City</a></td>
+                                    <td class="">27</td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td></td>
+                                    <td>15</td>
+                        
+                                    <td>12</td>
+                                    <td></td>
+                                    <td>33,666</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/holy-see-population/">802</a> </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>9</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/vanuatu/">Vanuatu</a></td>
+                                    <td class="">3</td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td></td>
+                                    <td>1</td>
+                        
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td>470</td>
+                                    <td>1,506</td>
+                                    <td><a href="/world-population/vanuatu-population/">312,053</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Australia/Oceania">
+                                        Australia/Oceania</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>10</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/uzbekistan/">Uzbekistan</a></td>
+                                    <td class="">80,347</td>
+                                    <td>+79</td>
+                                    <td>622 </td>
+                                    <td></td>
+                                    <td>79,051</td>
+                        
+                                    <td>674</td>
+                                    <td>27</td>
+                                    <td>2,377</td>
+                                    <td>18</td>
+                                    <td>1,377,915</td>
+                                    <td>40,764</td>
+                                    <td><a href="/world-population/uzbekistan-population/">33,802,407</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>11</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/us/">USA</a>
+                                    </td>
+                                    <td class="">29,880,550
+                                    </td>
+                                    <td>+18,426</td>
+                                    <td>542,637 </td>
+                                    <td>+446</td>
+                                    <td>20,648,033</td>
+                        
+                                    <td>8,689,880</td>
+                                    <td>12,596</td>
+                                    <td>89,909</td>
+                                    <td>1,633</td>
+                                    <td>373,400,891</td>
+                                    <td>1,123,546</td>
+                                    <td><a href="/world-population/us-population/">332,341,490</a> </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>12</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/uruguay/">Uruguay</a></td>
+                                    <td class="">66,484</td>
+                                    <td></td>
+                                    <td>678 </td>
+                                    <td></td>
+                                    <td>57,134</td>
+                                    <td>8,672</td>
+                                    <td>91</td>
+                                    <td>19,093</td>
+                                    <td>195</td>
+                                    <td>1,086,087</td>
+                                    <td>311,911</td>
+                                    <td><a href="/world-population/uruguay-population/">3,482,043</a>
+                                    </td>
+                                    <td style="display:none" data-continent="South America">SouthAmerica
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>13</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/ukraine/">Ukraine</a></td>
+                                    <td class="">1,425,522
+                                    </td>
+                                    <td>+9,084</td>
+                                    <td>27,685 </td>
+                                    <td>+262</td>
+                                    <td>1,210,246</td>
+                        
+                                    <td>187,591</td>
+                                    <td>177</td>
+                                    <td>32,732</td>
+                                    <td>636</td>
+                                    <td>7,154,442</td>
+                                    <td>164,275</td>
+                                    <td><a href="/world-population/ukraine-population/">43,551,614</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>14</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/uk/">UK</a></td>
+                                    <td class="">4,241,677
+                                    </td>
+                                    <td>+6,753</td>
+                                    <td>125,168 </td>
+                                    <td>+181</td>
+                                    <td>3,386,655</td>
+                                    <td>729,854</td>
+                                    <td>1,237</td>
+                                    <td>62,257</td>
+                                    <td>1,837</td>
+                                    <td>101,314,223</td>
+                                    <td>1,487,027</td>
+                                    <td><a href="/world-population/uk-population/">68,132,056</a> </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>15</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/uganda/">Uganda</a></td>
+                                    <td class="">40,520</td>
+                                    <td></td>
+                                    <td>334 </td>
+                                    <td></td>
+                                    <td>15,095</td>
+                                    <td>25,091</td>
+                                    <td></td>
+                                    <td>867</td>
+                                    <td>7</td>
+                                    <td>896,145</td>
+                                    <td>19,179</td>
+                                    <td><a href="/world-population/uganda-population/">46,724,486</a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>16</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/united-arab-emirates/">UAE</a></td>
+                                    <td class="">419,996
+                                    </td>
+                                    <td>+2,087</td>
+                                    <td>1,369 </td>
+                                    <td>+16</td>
+                                    <td>399,803</td>
+                        
+                                    <td>18,824</td>
+                                    <td></td>
+                                    <td>42,115</td>
+                                    <td>137</td>
+                                    <td>33,108,534</td>
+                                    <td>3,319,954</td>
+                                    <td><a href="/world-population/united-arab-emirates-population/">9,972,587</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>17</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/turks-and-caicos-islands/">Turks and Caicos</a>
+                                    </td>
+                                    <td class="">2,190</td>
+                                    <td></td>
+                                    <td>15 </td>
+                                    <td></td>
+                                    <td>2,071</td>
+                        
+                                    <td>104</td>
+                                    <td>5</td>
+                                    <td>56,043</td>
+                                    <td>384</td>
+                                    <td>17,437</td>
+                                    <td>446,222</td>
+                                    <td><a href="/world-population/turks-and-caicos-islands-population/">39,077</a>
+                                    </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>18</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/turkey/">Turkey</a></td>
+                                    <td class="">2,835,989
+                                    </td>
+                                    <td>+14,046</td>
+                                    <td>29,290 </td>
+                                    <td>+63</td>
+                                    <td>2,659,093</td>
+                        
+                                    <td>147,606</td>
+                                    <td>1,310</td>
+                                    <td>33,379</td>
+                                    <td>345</td>
+                                    <td>34,694,624</td>
+                                    <td>408,347</td>
+                                    <td><a href="/world-population/turkey-population/">84,963,623</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>19</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/tunisia/">Tunisia</a></td>
+                                    <td class="">239,368
+                                    </td>
+                                    <td></td>
+                                    <td>8,292 </td>
+                                    <td></td>
+                                    <td>205,719</td>
+                        
+                                    <td>25,357</td>
+                                    <td>275</td>
+                                    <td>20,109</td>
+                                    <td>697</td>
+                                    <td>1,017,194</td>
+                                    <td>85,452</td>
+                                    <td><a href="/world-population/tunisia-population/">11,903,738</a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>20</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/trinidad-and-tobago/">Trinidad and Tobago</a>
+                                    </td>
+                                    <td class="">7,743</td>
+                                    <td></td>
+                                    <td>140 </td>
+                                    <td></td>
+                                    <td>7,509</td>
+                        
+                                    <td>94</td>
+                                    <td>2</td>
+                                    <td>5,520</td>
+                                    <td>100</td>
+                                    <td>101,043</td>
+                                    <td>72,039</td>
+                                    <td><a href="/world-population/trinidad-and-tobago-population/">1,402,618</a>
+                                    </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>21</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/togo/">Togo</a>
+                                    </td>
+                                    <td class="">7,737</td>
+                                    <td></td>
+                                    <td>92 </td>
+                                    <td></td>
+                                    <td>6,534</td>
+                        
+                                    <td>1,111</td>
+                                    <td></td>
+                                    <td>920</td>
+                                    <td>11</td>
+                                    <td>248,163</td>
+                                    <td>29,503</td>
+                                    <td><a href="/world-population/togo-population/">8,411,398</a> </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>22</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/timor-leste/">Timor-Leste</a></td>
+                                    <td class="">159</td>
+                                    <td>+14</td>
+                                    <td> </td>
+                                    <td></td>
+                                    <td>94</td>
+                        
+                                    <td>65</td>
+                                    <td></td>
+                                    <td>119</td>
+                                    <td></td>
+                                    <td>23,131</td>
+                                    <td>17,318</td>
+                                    <td><a href="/world-population/timor-leste-population/">1,335,655</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>23</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/thailand/">Thailand</a></td>
+                                    <td class="">26,598</td>
+                                    <td>+58</td>
+                                    <td>85 </td>
+                                    <td></td>
+                                    <td>26,000</td>
+                        
+                                    <td>513</td>
+                                    <td>1</td>
+                                    <td>380</td>
+                                    <td>1</td>
+                                    <td>1,588,637</td>
+                                    <td>22,720</td>
+                                    <td><a href="/world-population/thailand-population/">69,920,970</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>24</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/tanzania/">Tanzania</a></td>
+                                    <td class="">509</td>
+                                    <td></td>
+                                    <td>21 </td>
+                                    <td></td>
+                                    <td>183</td>
+                        
+                                    <td>305</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>0.3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/tanzania-population/">60,894,519</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr style="background-color:#F0F0F0" role="row" class="even">
+                                    <td>25</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/tajikistan/">Tajikistan</a></td>
+                                    <td class="">13,308</td>
+                                    <td></td>
+                                    <td>90 </td>
+                                    <td></td>
+                                    <td>13,218</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td>1,374</td>
+                                    <td>9</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/tajikistan-population/">9,684,201</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>26</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/taiwan/">Taiwan</a></td>
+                                    <td class="">978</td>
+                                    <td></td>
+                                    <td>10 </td>
+                                    <td></td>
+                                    <td>936</td>
+                        
+                                    <td>32</td>
+                                    <td></td>
+                                    <td>41</td>
+                                    <td>0.4</td>
+                                    <td>444,634</td>
+                                    <td>18,646</td>
+                                    <td><a href="/world-population/taiwan-population/">23,846,563</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>27</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/syria/">Syria</a></td>
+                                    <td class="">16,187</td>
+                                    <td></td>
+                                    <td>1,079 </td>
+                                    <td></td>
+                                    <td>10,625</td>
+                        
+                                    <td>4,483</td>
+                                    <td></td>
+                                    <td>910</td>
+                                    <td>61</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/syria-population/">17,791,224</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>28</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/switzerland/">Switzerland</a></td>
+                                    <td class="">569,312
+                                    </td>
+                                    <td>+1,409</td>
+                                    <td>10,090 </td>
+                                    <td>+8</td>
+                                    <td>526,511</td>
+                        
+                                    <td>32,711</td>
+                                    <td>159</td>
+                                    <td>65,451</td>
+                                    <td>1,160</td>
+                                    <td>5,354,200</td>
+                                    <td>615,549</td>
+                                    <td><a href="/world-population/switzerland-population/">8,698,250</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>29</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sweden/">Sweden</a></td>
+                                    <td class="">707,192
+                                    </td>
+                                    <td></td>
+                                    <td>13,111 </td>
+                                    <td>+34</td>
+                                    <td>N/A</td>
+                        
+                                    <td>N/A</td>
+                                    <td>219</td>
+                                    <td>69,724</td>
+                                    <td>1,293</td>
+                                    <td>6,378,529</td>
+                                    <td>628,879</td>
+                                    <td><a href="/world-population/sweden-population/">10,142,695</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>30</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/suriname/">Suriname</a></td>
+                                    <td class="">8,990</td>
+                                    <td></td>
+                                    <td>175 </td>
+                                    <td></td>
+                                    <td>8,498</td>
+                        
+                                    <td>317</td>
+                                    <td>2</td>
+                                    <td>15,231</td>
+                                    <td>296</td>
+                                    <td>42,192</td>
+                                    <td>71,481</td>
+                                    <td><a href="/world-population/suriname-population/">590,252</a>
+                                    </td>
+                                    <td style="display:none" data-continent="South America">SouthAmerica
+                                    </td>
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>31</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sudan/">Sudan</a></td>
+                                    <td class="">28,766</td>
+                                    <td></td>
+                                    <td>1,915 </td>
+                                    <td></td>
+                                    <td>23,268</td>
+                        
+                                    <td>3,583</td>
+                                    <td></td>
+                                    <td>646</td>
+                                    <td>43</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/sudan-population/">44,549,353</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>32</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/saint-vincent-and-the-grenadines/">St. Vincent
+                                            Grenadines</a></td>
+                                    <td class="">1,674</td>
+                                    <td>+4</td>
+                                    <td>8 </td>
+                                    <td></td>
+                                    <td>1,114</td>
+                        
+                                    <td>552</td>
+                                    <td>2</td>
+                                    <td>15,056</td>
+                                    <td>72</td>
+                                    <td>37,974</td>
+                                    <td>341,545</td>
+                                    <td><a href="/world-population/saint-vincent-and-the-grenadines-population/">111,183</a>
+                                    </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>33</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/saint-barthelemy/">St. Barth</a></td>
+                                    <td class="">638</td>
+                                    <td></td>
+                                    <td>1 </td>
+                                    <td></td>
+                                    <td>462</td>
+                        
+                                    <td>175</td>
+                                    <td></td>
+                                    <td>64,457</td>
+                                    <td>101</td>
+                                    <td>19,114</td>
+                                    <td>1,931,097</td>
+                                    <td><a href="/world-population/saint-barthelemy-population/">9,898</a>
+                                    </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>34</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sri-lanka/">Sri
+                                            Lanka</a></td>
+                                    <td class="">86,685</td>
+                                    <td></td>
+                                    <td>515 </td>
+                                    <td>+4</td>
+                                    <td>83,561</td>
+                        
+                                    <td>2,609</td>
+                                    <td></td>
+                                    <td>4,037</td>
+                                    <td>24</td>
+                                    <td>2,225,675</td>
+                                    <td>103,639</td>
+                                    <td><a href="/world-population/sri-lanka-population/">21,475,225</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>35</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/spain/">Spain</a></td>
+                                    <td class="">3,178,356
+                                    </td>
+                                    <td>+6,255</td>
+                                    <td>72,085 </td>
+                                    <td>+166</td>
+                                    <td>2,857,714</td>
+                        
+                                    <td>248,557</td>
+                                    <td>2,264</td>
+                                    <td>67,961</td>
+                                    <td>1,541</td>
+                                    <td>40,292,390</td>
+                                    <td>861,550</td>
+                                    <td><a href="/world-population/spain-population/">46,767,300</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>36</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/south-sudan/">South Sudan</a></td>
+                                    <td class="">9,205</td>
+                                    <td>+113</td>
+                                    <td>103 </td>
+                                    <td>+1</td>
+                                    <td>7,906</td>
+                        
+                                    <td>1,196</td>
+                                    <td>8</td>
+                                    <td>816</td>
+                                    <td>9</td>
+                                    <td>118,499</td>
+                                    <td>10,502</td>
+                                    <td><a href="/world-population/south-sudan-population/">11,283,999</a>
+                                    </td>
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>37</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/south-africa/">South Africa</a></td>
+                                    <td class="">1,525,648
+                                    </td>
+                                    <td>+1,474</td>
+                                    <td>51,110 </td>
+                                    <td>+95</td>
+                                    <td>1,447,503</td>
+                        
+                                    <td>27,035</td>
+                                    <td>546</td>
+                                    <td>25,503</td>
+                                    <td>854</td>
+                                    <td>9,369,594</td>
+                                    <td>156,622</td>
+                                    <td><a href="/world-population/south-africa-population/">59,822,837</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>38</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/somalia/">Somalia</a></td>
+                                    <td class="">8,820</td>
+                                    <td>+107</td>
+                                    <td>338 </td>
+                                    <td>+11</td>
+                                    <td>4,079</td>
+                        
+                                    <td>4,403</td>
+                                    <td></td>
+                                    <td>545</td>
+                                    <td>21</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/world-population/somalia-population/">16,195,700</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>39</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/solomon-islands/">Solomon Islands</a></td>
+                                    <td class="">18</td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td></td>
+                                    <td>16</td>
+                        
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>26</td>
+                                    <td></td>
+                                    <td>4,500</td>
+                                    <td>6,443</td>
+                                    <td><a href="/world-population/solomon-islands-population/">698,395</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Australia/Oceania">
+                                        Australia/Oceania</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>40</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/slovenia/">Slovenia</a></td>
+                                    <td class="">198,234
+                                    </td>
+                                    <td>+860</td>
+                                    <td>3,918 </td>
+                                    <td>+10</td>
+                                    <td>183,848</td>
+                        
+                                    <td>10,468</td>
+                                    <td>90</td>
+                                    <td>95,344</td>
+                                    <td>1,884</td>
+                                    <td>961,901</td>
+                                    <td>462,645</td>
+                                    <td><a href="/world-population/slovenia-population/">2,079,136</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>41</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/slovakia/">Slovakia</a></td>
+                                    <td class="">331,571
+                                    </td>
+                                    <td>+1,978</td>
+                                    <td>8,244 </td>
+                                    <td>+98</td>
+                                    <td>255,300</td>
+                        
+                                    <td>68,027</td>
+                                    <td>674</td>
+                                    <td>60,711</td>
+                                    <td>1,509</td>
+                                    <td>2,164,779</td>
+                                    <td>396,373</td>
+                                    <td><a href="/world-population/slovakia-population/">5,461,470</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>42</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sint-maarten/">Sint Maarten</a></td>
+                                    <td class="">2,077</td>
+                                    <td></td>
+                                    <td>27 </td>
+                                    <td></td>
+                                    <td>2,034</td>
+                        
+                                    <td>16</td>
+                                    <td>1</td>
+                                    <td>48,066</td>
+                                    <td>625</td>
+                                    <td>21,103</td>
+                                    <td>488,371</td>
+                                    <td><a href="/world-population/sint-maarten-population/">43,211</a>
+                                    </td>
+                                    <td style="display:none" data-continent="North America">NorthAmerica
+                                    </td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>43</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/singapore/">Singapore</a></td>
+                                    <td class="">60,070</td>
+                                    <td>+8</td>
+                                    <td>29 </td>
+                                    <td></td>
+                                    <td>59,939</td>
+                        
+                                    <td>102</td>
+                                    <td>1</td>
+                                    <td>10,212</td>
+                                    <td>5</td>
+                                    <td>7,805,264</td>
+                                    <td>1,326,963</td>
+                                    <td><a href="/world-population/singapore-population/">5,882,050</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>44</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sierra-leone/">Sierra Leone</a></td>
+                                    <td class="">3,928</td>
+                                    <td></td>
+                                    <td>79 </td>
+                                    <td></td>
+                                    <td>2,769</td>
+                        
+                                    <td>1,080</td>
+                                    <td></td>
+                                    <td>486</td>
+                                    <td>10</td>
+                                    <td>116,448</td>
+                                    <td>14,397</td>
+                                    <td><a href="/world-population/sierra-leone-population/">8,088,085</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>45</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/seychelles/">Seychelles</a></td>
+                                    <td class="">3,132</td>
+                                    <td>+45</td>
+                                    <td>16 </td>
+                                    <td></td>
+                                    <td>2,847</td>
+                        
+                                    <td>269</td>
+                                    <td></td>
+                                    <td>31,711</td>
+                                    <td>162</td>
+                                    <td>5,200</td>
+                                    <td>52,649</td>
+                                    <td><a href="/world-population/seychelles-population/">98,767</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>46</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/serbia/">Serbia</a></td>
+                                    <td class="">503,291
+                                    </td>
+                                    <td>+4,595</td>
+                                    <td>4,644 </td>
+                                    <td>+24</td>
+                                    <td>400,347</td>
+                        
+                                    <td>98,300</td>
+                                    <td>213</td>
+                                    <td>57,763</td>
+                                    <td>533</td>
+                                    <td>3,106,074</td>
+                                    <td>356,488</td>
+                                    <td><a href="/world-population/serbia-population/">8,712,992</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>47</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/senegal/">Senegal</a></td>
+                                    <td class="">36,195</td>
+                                    <td></td>
+                                    <td>935 </td>
+                                    <td></td>
+                                    <td>31,467</td>
+                        
+                                    <td>3,793</td>
+                                    <td>40</td>
+                                    <td>2,123</td>
+                                    <td>55</td>
+                                    <td>405,705</td>
+                                    <td>23,802</td>
+                                    <td><a href="/world-population/senegal-population/">17,045,174</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>48</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/saudi-arabia/">Saudi Arabia</a></td>
+                                    <td class="">381,348
+                                    </td>
+                                    <td>+390</td>
+                                    <td>6,551 </td>
+                                    <td>+6</td>
+                                    <td>371,850</td>
+                        
+                                    <td>2,947</td>
+                                    <td>538</td>
+                                    <td>10,838</td>
+                                    <td>186</td>
+                                    <td>14,175,803</td>
+                                    <td>402,881</td>
+                                    <td><a href="/world-population/saudi-arabia-population/">35,186,108</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Asia">Asia</td>
+                        
+                        
+                                </tr>
+                                <tr role="row" class="odd">
+                                    <td>49</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/sao-tome-and-principe/">Sao Tome and
+                                            Principe</a></td>
+                                    <td class="">2,010</td>
+                                    <td></td>
+                                    <td>32 </td>
+                                    <td></td>
+                                    <td>1,696</td>
+                        
+                                    <td>282</td>
+                                    <td></td>
+                                    <td>9,056</td>
+                                    <td>144</td>
+                                    <td>11,592</td>
+                                    <td>52,228</td>
+                                    <td><a href="/world-population/sao-tome-and-principe-population/">221,949</a>
+                                    </td>
+                                
+                        
+                        
+                                </tr>
+                                <tr role="row" class="even">
+                                    <td>50</td>
+                                    <td class="sorting_1"><a class="mt_a" href="country/san-marino/">San
+                                            Marino</a></td>
+                                    <td class="">4,062</td>
+                                    <td>+32</td>
+                                    <td>77 </td>
+                                    <td></td>
+                                    <td>3,511</td>
+                        
+                                    <td>474</td>
+                                    <td>11</td>
+                                    <td>119,541</td>
+                                    <td>2,266</td>
+                                    <td>46,509</td>
+                                    <td>1,368,717</td>
+                                    <td><a href="/world-population/san-marino-population/">33,980</a>
+                                    </td>
+                                    <td style="display:none" data-continent="Europe">Europe</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-news" class="pt-50 pb-50">
+        <div class="container">
+            <div class="row mb-15">
+                <div class="col-12">
+                    <h2 class="mb-30 text-center underlined">Latest News</h2>
+                </div>
+            </div>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    March 12
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in 
+                                    <strong><a href="/coronavirus/country/afghanistan/">Afghanistan</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/" class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>4578 new cases</strong> and
+                                    <strong>87 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/philippines/">Philippines</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>355 new cases</strong> and
+                                    <strong>7 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/lithuania">Lithuania</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>9011 new cases</strong> and
+                                    <strong>38 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/hungary/">Hungary</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>908 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/russia/">Russia</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>109 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/singapore/">Singapore</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/wallis-and-futuna-islands/">Islands</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>123 new cases</strong> and
+                                    <strong>30 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/mauritius">Mauritius</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    March 11
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in 
+                                    <strong><a href="/coronavirus/country/afghanistan/">Afghanistan</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/" class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>4578 new cases</strong> and
+                                    <strong>87 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/philippines/">Philippines</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>355 new cases</strong> and
+                                    <strong>7 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/lithuania">Lithuania</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>9011 new cases</strong> and
+                                    <strong>38 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/hungary/">Hungary</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>908 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/russia/">Russia</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>109 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/singapore/">Singapore</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/wallis-and-futuna-islands/">Islands</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>123 new cases</strong> and
+                                    <strong>30 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/mauritius">Mauritius</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    March 10
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in 
+                                    <strong><a href="/coronavirus/country/afghanistan/">Afghanistan</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/" class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>4578 new cases</strong> and
+                                    <strong>87 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/philippines/">Philippines</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>355 new cases</strong> and
+                                    <strong>7 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/lithuania">Lithuania</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>9011 new cases</strong> and
+                                    <strong>38 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/hungary/">Hungary</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>908 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/russia/">Russia</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>109 new cases</strong> and
+                                    <strong>23 new deaths</strong> in
+                                    <strong><a href="/coronavirus/country/singapore/">Singapore</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>17 new cases</strong> and
+                                    <strong>3 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/wallis-and-futuna-islands/">Islands</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-30">
+                            <div class="counter-box colored">
+                                <p>
+                                    <strong>123 new cases</strong> and
+                                    <strong>30 new deaths</strong> in
+                                    <strong><a href="https://www.worldometers.info/coronavirus/country/mauritius">Mauritius</a></strong>
+                                </p>
+                                <a href="https://moph-dw.gov.af/dhis-web-dashboard/#/"
+                                   class="btn btn-outline-primary">Source <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+            <div class="load-more mt-40 text-center">
+                <a href="#" class="btn btn-outline-primary"><i class="fa fa-search"></i> Load more news</a>
+            </div>
+        </div>
+        <div class="container">
+	        <div class="row mt-30 mb-30">
+	            <div class="col-md-12">
+	                <h4>January Timeline :</h4>
+	                <ul class="timeline">
+	                    <li>
+	                        <p>On January 31, the first 2 novel coronavirus cases in the UK, [18] the first 2 cases in Russia, [20] and the first case in Sweden and in Spain were reported. Canada reported its 4th case.</p>
+	                    </li>
+	                    <li>
+	                        <p>On Jan. 31, the United States</p>
+	                        <ul>
+	                            <li><a href="https://www.hhs.gov/about/news/2020/01/31/secretary-azar-declares-public-health-emergency-us-2019-novel-coronavirus.html">declared Coronavirus a Public Health Emergency</a></li>
+	                            <li>issued 14 days quarantine rules for US citizens entering the US from China (mandatory if entering from the Hubei province).</li>
+	                            <li>issued an order to deny entry to foreigners who have traveled to China within the past two weeks.</li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        <p>On January 30, the novel coronavirus total case count surpassed that for SARS (which affected 8,096 people worldwide).</p>
+	                    </li>
+	                    <li>
+	                        <p>On January 30, the World Health Organization declared the coronavirus outbreak a Global Public Health Emergency.</p>
+	                    </li>
+	                    <li>
+	                        <p>Germany, Japan, Vietnam and the United States have reported cases in patients who didn't personally visit China, but contracted the virus from someone else who had visited Wuhan, China[15]. These cases of human to human transmission are the most worrisome, according to the WHO[16].</p>
+	                    </li>
+	                    <li>
+	                        <p>Wuhan (the city where the virus originated) is the largest city in Central China, with a population of over 11 million people. The city, on January 23, shut down transport links. Following Wuhan lock down, the city of Huanggang was also placed in quarantine, and the city of Ezhou closed its train stations. This means than 18 million people have been placed in isolation. The World Health Organization (WHO) said cutting off a city as large as Wuhan is "unprecedented in public health history."[12] and praised China for its incredible commitment to isolate the virus and minimize the spread to other countries.</p>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+        </div>
+    </section>
+
+    <section id="corona-dangerousity" class="mb-50">
+        <div class="container">
+            <div class="row mb-60">
+                <div class="col-md-7">
+                    <div class="item-title">
+                        <h3>How dangerous is the virus?</h3>
+                    </div>
+                    <div class="item-body">
+                        <p>There are three parameters to understand in order to assess the magnitude of the risk posed by this novel coronavirus:</p>
+                        <ul>
+                            <li>Transmission Rate (Ro) - number of newly infected people from a single case</li>
+                            <li>Case Fatality Rate (CFR) - percent of cases that result in death</li>
+                            <li>Determine whether asymptomatic transmission is possible</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="assets/images/dangerous.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-60">
+                <div class="col-md-5 text-center">
+                    <img src="assets/images/contagious.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                    <div class="item-title">
+                        <h3>How contagious is the Wuhan Coronavirus? (Ro)</h3>
+                    </div>
+                    <div class="item-body">
+                        <p>The attack rate or transmissibility (how rapidly the disease spreads) of a virus is indicated by its reproductive number (Ro, pronounced R-nought or r-zero), which represents the average number of people to which a single infected person will transmit the virus.</p>
+                        <p>WHO's estimated (on Jan. 23) Ro to be between 1.4 and 2.5. [13]</p>
+                        <p>Other studies have estimated a Ro between 3.6 and 4.0, and between 2.24 to 3.58. [23].</p>
+                        <p>Preliminary studies had estimated Ro to be between 1.5 and 3.5. [5][6][7]</p>
+                        <p>An outbreak with a reproductive number of below 1 will gradually disappear.</p>
+                        <p>For comparison, the Ro for the common flu is 1.3 and for SARS it was 2.0.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-60">
+                <div class="col-md-7">
+                    <div class="item-title">
+                        <h3>Fatality Rate (case fatality ratio or CFR) of the Wuhan Coronavirus</h3>
+                    </div>
+                    <div class="item-body">
+                        <p>See full details: <a href="/coronavirus/coronavirus-death-rate/"><strong>Coronavirus Fatality Rate</strong></a></p>
+                        <p>The novel coronavirus' case fatality rate has been estimated at around 2%, in the WHO press conference held on January 29, 2020 [16] . However, it noted that, without knowing how many were infected, it was too early to be able to put a percentage on the mortality rate figure.</p>
+                        <p>A prior estimate [9] had put that number at 3%.</p>
+                        <p>Fatality rate can change as a virus can mutate, according to epidemiologists.</p>
+                        <p>For comparison, the case fatality rate for SARS was 10%, and for MERS 34%.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="assets/images/fatality.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-60">
+                <div class="col-md-5 text-center">
+                    <img src="assets/images/coronavirus-incubation.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7">
+                    <div class="item-title">
+                        <h3>How contagious is the Wuhan Coronavirus? (Ro)</h3>
+                    </div>
+                    <div class="item-body">
+                        <p>See full details: <a href="/coronavirus/coronavirus-incubation-period/"><strong>COVID-19 Coronavirus Incubation Period </strong></a></p>
+                        <p>Symptoms of COVID-19 may appear in as few as 2 days or as long as 14 (estimated ranges vary from 2-10 days, 2-14 days, and 10-14 days, see details), during which the virus is contagious but the patient does not display any symptom (asymptomatic transmission).</p>
+
+                        <div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin"> <h4>Requires JavaScript alert plugin</h4> <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="item-title">
+                        <h3>Age and conditions of Coronavirus cases</h3>
+                    </div>
+                    <div class="item-body">
+                        <p>See latest findings: <a href="/coronavirus/coronavirus-age-sex-demographics/"><strong>Age, Sex, Demographics of COVID-19 Cases and Deaths </strong></a></p>
+                        <p>According to early estimates by China's National Health Commission (NHC), about 80% of those who died were over the age of 60 and 75% of them had pre-existing health conditions such as cardiovascular diseases and diabetes.[24]</p>
+                        <p>According to the WHO Situation Report no. 7 issued on Jan. 27:</p>
+                        <ul>
+                            <li>The median age of cases detected outside of China is 45 years, ranging from 2 to 74 years.</li>
+                            <li>71% of cases were male.</li>
+                        </ul>
+                        <p>A study of 138 hospitalized patients with NCIP found that the median age was 56 years (interquartile range, 42-68; range, 22-92 years) and 75 (54.3%) were men.[25]</p>
+                        <p>The WHO, in its <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">Myth busters FAQs</a>, addresses the question: "Does the new coronavirus affect older people, or are younger people also susceptible?" by answering that:</p>
+                        <ul>
+                            <li>People of all ages can be infected by the novel coronavirus COVID-19.</li>
+                            <li>Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus.</li>
+                        </ul>
+                        <div class="row age-conditions">
+                            <div class="col-md-6 col-sm-6 mb-30">
+                                <div class="item p-20 bg-danger-light h-100 text-gray">
+                                    <h4>Patient who died in the Philippines was a 44-year old male</h4>
+                                    <p class="m-0">The patient who died in the Philippines on February 2, in what was the first death occurring outside of China, was a 44-year-old Chinese man from Wuhan who was admitted on Jan. 25 after experiencing fever, cough, and sore throat, before developing severe pneumonia. In the last few days, “the patient was stable and showed signs of improvement, however, the condition of the patient deteriorated within his last 24 hours resulting in his demise." according to the Philippine Department of Health.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 mb-30">
+                                <div class="item p-20 bg-warning h-100">
+                                    <h4>Serious Cases of 30 year old patients in France</h4>
+                                    <p class="m-0">As of Jan. 29, according to French authorities, the conditions of the two earliest Paris cases had worsened and the patients were being treated in intensive care, according to French authorities. The patients have been described as a young couple aged 30 and 31 years old, both Chinese citizens from Wuhan who were asymptomatic when they arrived in Paris on January 18 [19].</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row age-conditions">
+                            <div class="col-md-6 col-sm-6 mb-30">
+                                <div class="item p-20 bg-info h-100">
+                                    <h4>Age and Sex of the first deaths as reported by the China National Health Commission (NHC)</h4>
+                                    <p class="m-0">The NHC reported the details of the first 17 deaths up to 24 pm on January 22, 2020. The deaths included 13 males and 4 females. The median age of the deaths was 75 (range 48-89) years.[21]</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 mb-30">
+                                <div class="item p-20 bg-dark text-white h-100">
+                                    <h4>WHO Risk Assessment: Global Emergency</h4>
+                                    <p>See full details: <a href="/coronavirus/who-coronavirus/"><strong>WHO coronavirus updates</strong></a></p>
+                                    <p>On January 30, the World Health Organization declared the coronavirus outbreak a Global Public Health Emergency.</p>
+                                    <p class="mb-0">For more information from the WHO regarding novel coronavirus: WHO page on Novel Coronavirus (2019-nCoV)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparisons" class="pt-50 pb-50">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-12 text-center">
+                    <h2 class="underlined">Comparisons</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="item">
+                        <p class="text-justify"><i class="fa fa-check-circle text-success"></i> Every year an estimated 290,000 to 650,000 people die in the world due to complications from seasonal influenza (flu) viruses. This figure corresponds to 795 to 1,781 deaths per day due to the seasonal flu.</p>
+                    </div>
+                    <div class="item">
+                        <p class="text-justify"><i class="fa fa-check-circle text-success"></i> SARS (November 2002 to July 2003): was a coronavirus that originated from Beijing, China, spread to 29 countries, and resulted in 8,096 people infected with 774 deaths (fatality rate of 9.6%). Considering that SARS ended up infecting 5,237 people in mainland China, Wuhan Coronavirus surpassed SARS on January 29, 2020, when Chinese officials confirmed 5,974 cases of the novel coronavirus (2019-nCoV). One day later, on January 30, 2020 the novel coronavirus cases surpassed even the 8,096 cases worldwide which were the final SARS count in 2003.</p>
+                    </div>
+                    <div class="item">
+                        <p><i class="fa fa-check-circle text-success"></i> MERS (in 2012) killed 858 people out of the 2,494 infected (fatality rate of 34.4%).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="worldometers-sections" class="pt-50 pb-50">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-12 text-center">
+                    <h2 class="underlined">Coronavirus Worldometer Sections</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/">
+                        <div class="item">
+                            <i class="fa fa-refresh fa-3x"></i>
+                            <h5>Coronavirus Update</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/">
+                        <div class="item">
+                            <i class="fa fa-bar-chart fa-3x"></i>
+                            <h5>Case statistics and graphs</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-toll/">
+                        <div class="item">
+                            <i class="fa fa-bar-chart fa-3x"></i>
+                            <h5>Death statistics and graphs</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/">
+                        <div class="item">
+                            <i class="fa fa-pie-chart fa-3x"></i>
+                            <h5>Mortality Rate</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-toll/">
+                        <div class="item">
+                            <i class="fa fa-calendar fa-3x"></i>
+                            <h5>Incubation Period</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-toll/">
+                        <div class="item">
+                            <i class="fa fa-male fa-3x"></i>
+                            <h5>Age, Sex, Existing Condition</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-toll/">
+                        <div class="item">
+                            <i class="fa fa-heartbeat fa-3x"></i>
+                            <h5>Symptoms</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center mb-30">
+                    <a href="https://www.worldometers.info/coronavirus/coronavirus-death-toll/">
+                        <div class="item">
+                            <i class="fa fa-flag fa-3x"></i>
+                            <h5>Countries with cases: basic list - detailed list</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="moreinfos" class="pt-50 pb-50">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-12 text-center">
+                    <h2 class="underlined">More infos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="item">
+                        <a href="http://www.xinhuanet.com/english/2020-01/28/c_138739773.htm">Novel coronavirus outbreak may reach peak in one week or about 10 days: expert</a> - Xinhua, Jan. 28, 2020 
+                    </div>
+                    <div class="item">
+                        <a href="https://www.ft.com/content/cc2be982-417d-11ea-bdb5-169ba7be433d">China’s Xi Jinping pledges to overcome ‘devil’ coronavirus</a> - Financial Times, Jan. 28, 2020
+                    </div>
+                    <div class="item">
+                        <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext">Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China</a> - The Lancet, Jan. 24, 2020
+                    </div>
+                    <div class="item">
+                        <a href="https://www.bloomberg.com/news/articles/2020-01-23/several-china-coronavirus-victims-didn-t-even-have-a-fever">The Age, Sex and Symptoms of China’s Coronavirus Victims</a> - Bloomberg, Jan. 23, 2020
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="webographie" class="mb-30 pt-50">
+        <div class="container">
+            <div class="row mb-20">
+                <div class="col-12 text-center">
+                    <h2 class="underlined">Sources</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li id="ref-1"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/">Novel Coronavirus (2019-nCoV) situation reports</a> -
+                        <a href="https://www.who.int/">World Health Organization</a> (WHO) </li>
+                        <li id="ref-2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html">2019 Novel Coronavirus (2019-nCoV) in the U.S.</a> -. <a href="https://www.cdc.gov/">U.S. Centers for Disease Control and Prevention</a> (CDC) </li>
+                        <li id="ref-3"><a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml">Outbreak Notification</a> - National Health Commission (NHC) of the People’s Republic of China</li>
+                        <li id="ref-4"><a href="https://www.health.gov.au/health-topics/novel-coronavirus-2019-ncov">Novel coronavirus (2019-nCoV)</a> - Australian Government Department of Health</li>
+                        <li id="ref-5"><a href="https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2">Novel coronavirus 2019-nCoV: early estimation of epidemiological parameters and epidemic prediction</a> - Jonathan M. Read et al, Jan. 23,2020.</li>
+                        <li id="ref-6"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3524675">Early Transmissibility Assessment of a Novel Coronavirus in Wuhan, China</a> - Maimuna Majumder and Kenneth D. Mandl, Harvard University - Computational Health Informatics Program - Posted: 24 Jan 2020 Last revised: 27 Jan 2020</li>
+                        <li id="ref-7"><a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/">Report 3: Transmissibility of 2019-nCoV</a> - 25 January 2020 - Imperial College London&zwnj;</li>
+                        <li id="ref-8"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809029/">Case fatality risk of influenza A(H1N1pdm09): a systematic review</a> - Epidemiology. Nov. 24, 2013</li>
+                        <li id="ref-9"><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30185-9/fulltext#tbl1">A novel coronavirus outbreak of global health concern</a> - Chen Want et al. The Lancet. January 24, 2020 </li>
+                        <li id="ref-10"><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html">Symptoms of Novel Coronavirus (2019-nCoV)</a> - CDC</li>
+                        <li id="ref-11"><a href="https://www.aljazeera.com/news/2020/01/chinas-national-health-commission-news-conference-coronavirus-200126105935024.html">China's National Health Commission news conference on coronavirus</a> - Al Jazeera. January 26, 2020 </li>
+                        <li id="ref-12"><a href="https://www.reuters.com/article/us-china-health-who/wuhan-lockdown-unprecedented-shows-commitment-to-contain-virus-who-representative-in-china-idUSKBN1ZM1G9">Wuhan lockdown 'unprecedented', shows commitment to contain virus: WHO representative in China</a> - Reuters. January 23, 2020</li>
+                        <li id="ref-13"><a href="https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)">Statement on the meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV)</a> - WHO, January 23, 2020 </li>
+                        <li id="ref-14"><a href="https://www.who.int/news-room/events/detail/2020/01/30/default-calendar/international-health-regulations-emergency-committee-on-novel-coronavirus-in-china">International Health Regulations Emergency Committee on novel coronavirus in China</a> - WHO, January 30, 2020 </li>
+                        <li id="ref-15"><a href="https://www.theonlinecitizen.com/2020/01/29/human-to-human-transmission-of-wuhan-virus-outside-of-china-confirmed-in-germany-japan-and-vietnam/">Human-to-human transmission of Wuhan virus outside of China, confirmed in Germany, Japan and Vietnam</a> - The Online Citizen, Jan. 29, 2020</li>
+                        <li id="ref-16"><a href="https://www.pscp.tv/WHO/1OdJrqEvgaeGX">Who: "Live from Geneva on the new #coronavirus outbreak"</a></li>
+                        <li id="ref-17"><a href="https://www.cdc.gov/media/releases/2020/p0130-coronavirus-spread.html">CDC Confirms Person-to-Person Spread of New Coronavirus in the United States</a> - CDC Press Release, Jan. 30, 2020</li>
+                        <li id="ref-18"> <a href="https://www.gov.uk/government/news/cmo-confirms-cases-of-coronavirus-in-england">CMO confirms cases of coronavirus in England</a> - CMO, UK, Jan. 31, 2020</li>
+                        <li id="ref-19"><a href="https://www.thelocal.fr/20200131/coronavirus-in-france-what-you-need-to-know">Coronavirus in France: what you need to know</a> - The Local France, Jan. 31, 2020</li>
+                        <li id="ref-20"><a href="https://tass.com/society/1115101">First two persons infected with coronavirus identified in Russia</a> - Tass, Jan. 31, 2020</li>
+                        <li id="ref-21"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jmv.25689?af=R">Updated understanding of the outbreak of 2019 novel coronavirus (2019nCoV) in Wuhan, China</a> - Journal of Medical Virology, Jan. 29, 2020 </li>
+                        <li id="ref-22"><a href="https://www.medrxiv.org/content/10.1101/2020.01.27.20018952v1.full.pdf">Estimating the effective reproduction number of the 2019-nCoV in China</a> - Zhidong Cao et al., Jan. 29, 2020</li>
+                        <li id="ref-23"><a href="https://www.sciencedirect.com/science/article/pii/S1201971220300539">Preliminary estimation of the basic reproduction number of novel coronavirus (2019-nCoV) in China, from 2019 to 2020: A data-driven analysis in the early phase of the outbreak</a> - Jan. 30, 2020 </li>
+                        <li id="ref-24"><a href="https://www.bbc.com/news/world-asia-china-51368873">Coronavirus: Window of opportunity to act, World Health Organization says</a> - BBC, Feb,\. 4, 2020</li>
+                        <li id="ref-25"><a href="https://jamanetwork.com/journals/jama/fullarticle/2761044?guestAccessKey=f61bd430-07d8-4b86-a749-bec05bfffb65">Clinical Characteristics of 138 Hospitalized Patients With 2019 Novel Coronavirus–Infected Pneumonia in Wuhan, China</a> - Wang et. al, JAMA, Feb. 7, 2020</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-50 pb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-30">
+                    <a class="" href="#">
+                        <img src="assets/images/logo-white.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-30">
+                    <div class="widget-links">
+                        <div class="widget-header mb-20">
+                            <h4>Liens utils</h4>
+                        </div>
+                        <div class="widget-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">About</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">Faq</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">Languages</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">Contact</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">Report</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-chevron-right"></i>
+                                    <a href="https://www.worldometers.info/about/">Coronavirus cases</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-30">
+                    <div class="widget-social">
+                        <div class="widget-header mb-20">
+                            <h4>Suivez-nous</h4>
+                        </div>
+                        <div class="widget-body">
+                           <a href="/newsletter-subscribe/" target="_blank" class="social-network-item newsletter" data-toggle="tooltip" data-placement="bottom" title="Newsletter"><i class="fa fa-bullhorn fa-round"></i></a>
+
+                           <a href="https://twitter.com/Worldometers" target="_blank" class="social-network-item twitter"><i class="fa fa-twitter fa-round"></i></a>
+
+                           <a href="https://www.facebook.com/Worldometers.info" target="_blank" class="social-network-item facebook"><i class="fa fa-facebook fa-round"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="copyright">© Copyright Worldometers.info - All rights reserved - <a href="/disclaimer/">Disclaimer &amp; Privacy Policy</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
